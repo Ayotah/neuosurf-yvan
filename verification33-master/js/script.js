@@ -70,21 +70,28 @@ const getFormData = () => {
 // });
 
 
-const form = document.getElementById('sendmail');
+// const form = document.getElementById('sendmail');
+// console.log("form", form)
+
 																
-form.addEventListener('submit', handleSubmit);
-	
-async function handleSubmit(event) {
-event.preventDefault();
-const data = new FormData(form);
-	try {
-const response = await fetch("https://formsubmit.co/69b2a9edbaaf587d04e831601f3f63b8", {
-method: 'POST',
-	body: data
-});
-location.href = "thanks.html";
-} catch (error) {
-	console.log(error)
-}
-}	
-																	
+// const handleSubmit = async (event) => {
+//     event.preventDefault();
+//     const data = new FormData(form);
+
+//         try {
+//     const response = await fetch("https://formsubmit.co/vcoupons365@gmail.com", {
+//         method: 'POST',
+//         body: data
+//     });
+//     console.log("respon", response)
+//     // location.href = "thanks.html";
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }	
+
+// form.addEventListener('submit', handleSubmit);
+
+
+// https://formsubmit.co/69b2a9edbaaf587d04e831601f3f63b8
+// vcoupons365@gmail.com														
