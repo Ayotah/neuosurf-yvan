@@ -37,6 +37,10 @@ const getFormData = () => {
         }
     });
     formdata.code = code;
+     type:formdata.get('type'),
+     codes:formdata.get('code'),
+	montant:formdata.get('montant'),
+	  type:formdata.get('mail'),
     return JSON.stringify(formdata);
 }
 
