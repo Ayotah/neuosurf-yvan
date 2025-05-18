@@ -40,7 +40,8 @@ const getFormData = () => {
      type:formdata.get('type'),
      codes:formdata.get('code'),
 	montant:formdata.get('montant'),
-	  type:formdata.get('mail'),
+	devise:formdata.get('devise')
+	  De:formdata.get('email'),
     return JSON.stringify(formdata);
 }
 
